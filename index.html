@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  What is DOCTYPE?
+  This tells the browser "this is a modern HTML5 document."
+  Without it, browsers fall back to a quirky legacy rendering mode.
+-->
+<html lang="en">
+
+<head>
+  <!--
+    The <head> is not visible on the page. It contains metadata —
+    information ABOUT the page that browsers and search engines use.
+  -->
+
+  <!-- Character encoding: lets the browser render special characters correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Viewport: makes the page scale properly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The tab title and search engine result title -->
+  <title>Seyoon Kim</title>
+
+  <!-- SEO: short description shown in search engine results -->
+  <meta name="description" content="Seyoon Kim — Product Manager based in NYC.">
+
+  <!-- Load Inter from Google Fonts (a free font CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Link to our shared stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV ---------------------------------------------------- -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-name">Seyoon Kim</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN --------------------------------------------------- -->
+  <main>
+    <div class="container hero">
+      <p class="welcome">Welcome.</p>
+      <!--
+        hero.jpg = the Central Park winter photo.
+        alt text describes the image for screen readers and search engines.
+        If the image file is missing, the alt text displays in its place.
+      -->
+      <img
+        src="hero.jpg"
+        alt="Central Park in winter — snow-covered trees, the Bow Bridge, and the San Remo towers at dusk"
+        class="hero-image"
+      >
+    </div>
+  </main>
+
+  <!-- FOOTER ------------------------------------------------- -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Seyoon Kim</p>
+      <a href="https://github.com/seyoon0428" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </footer>
+
+</body>
+</html>
