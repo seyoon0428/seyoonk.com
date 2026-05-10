@@ -12,24 +12,64 @@
     information ABOUT the page that browsers and search engines use.
   -->
 
-  <!-- Character encoding: lets the browser render special characters correctly -->
   <meta charset="UTF-8">
-
-  <!-- Viewport: makes the page scale properly on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- The tab title and search engine result title -->
   <title>Seyoon Kim</title>
-
-  <!-- SEO: short description shown in search engine results -->
   <meta name="description" content="Seyoon Kim — Product Manager based in NYC.">
 
-  <!-- Load Inter from Google Fonts (a free font CDN) -->
+  <!--
+    Favicon: the small icon shown in browser tabs and bookmarks.
+    SVG favicons are modern and scale to any size without blurring.
+  -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!--
+    Open Graph tags: control how the page looks when shared on
+    LinkedIn, Slack, iMessage, etc. Without these, apps make up
+    their own preview — often badly.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seyoonk.com/">
+  <meta property="og:title" content="Seyoon Kim">
+  <meta property="og:description" content="Product Manager based in NYC.">
+  <meta property="og:image" content="https://seyoonk.com/hero.jpg">
+
+  <!--
+    Twitter Card tags: same idea as Open Graph, but specifically
+    for X (Twitter). summary_large_image shows a big image preview.
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Seyoon Kim">
+  <meta name="twitter:description" content="Product Manager based in NYC.">
+  <meta name="twitter:image" content="https://seyoonk.com/hero.jpg">
+
+  <!--
+    JSON-LD structured data: a machine-readable description of who
+    this page is about. Google uses this to understand the content
+    and can display it in rich search results.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Seyoon Kim",
+    "url": "https://seyoonk.com",
+    "jobTitle": "Product Manager",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New York City",
+      "addressRegion": "NY"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/seyoonkim/"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Link to our shared stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -67,7 +107,6 @@
   <footer>
     <div class="container footer-inner">
       <p>© 2026 Seyoon Kim</p>
-      <a href="https://github.com/seyoon0428" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </footer>
 

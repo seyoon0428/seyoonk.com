@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  A sitemap tells search engines (Google, Bing, etc.) which pages
+  exist on your site and when they were last updated. Without one,
+  crawlers still find your pages eventually — but a sitemap makes
+  it faster and more reliable, especially for smaller sites that
+  don't have many external links pointing to them yet.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://seyoonk.com/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://seyoonk.com/about.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seyoonk.com/projects.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

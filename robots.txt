@@ -1,0 +1,13 @@
+# robots.txt
+#
+# This file tells web crawlers (search engine bots) what they are
+# and aren't allowed to index. "User-agent: *" means "all bots."
+# "Allow: /" means "you can crawl everything."
+#
+# We also point crawlers to the sitemap so they know exactly
+# which pages to index.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://seyoonk.com/sitemap.xml
